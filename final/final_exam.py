@@ -2,8 +2,8 @@
 ╔══════════════════════════════════════════════════════════════╗
 ║        CSP Python & Cybersecurity Final Exam - 2026          ║
 ║                                                              ║
-║  Name:  _______________________________________________      ║
-║  Date:  _______________________________________________      ║
+║  Name: SAMUEL S DUNCAN      ║
+║  Date:  MAY 6 2026     ║
 ╚══════════════════════════════════════════════════════════════╝
 
 GITHUB CLASSROOM INSTRUCTIONS:
@@ -83,8 +83,9 @@ print("\n--- Section 1: Python Basics ---")
 #   A = 90-100  |  B = 80-89  |  C = 70-79  |  D = 60-69  |  F = <60
 
 def letter_grade(score):
-    # YOUR CODE HERE
-    pass
+    if score==100:
+        set letter_grade
+        pass
 
 # Test your function (do not change these lines)
 test_scores = [100, 88, 73, 61, 45]
@@ -94,14 +95,9 @@ for s in test_scores:
 
 # ── 1C. List Operations [14 pts] ─────────────────────────
 # Given this list of cybersecurity threats:
-threats = ["phishing", "malware", "ransomware", "spyware", "DDoS"]
-
-# 1. Add "brute force" to the end of the list
-# YOUR CODE HERE
-
-# 2. Print the total number of threats
-# YOUR CODE HERE
-
+threats = ["phishing", "malware", "ransomware", "spyware", "DDoS","brute force"]
+print(threats)
+Big_Threats=["PHISHING","]
 # 3. Print each threat in ALL CAPS using a loop
 # YOUR CODE HERE
 

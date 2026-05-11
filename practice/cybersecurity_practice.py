@@ -73,36 +73,16 @@ decrypted = decrypt_caesar(encrypted, shift)
 print(f"  Original:  {message}")
 print(f"  Encrypted: {encrypted}")
 print(f"  Decrypted: {decrypted}")
-
-
-# ============================================================
-# EXERCISE 3: File System Explorer
-# ============================================================
-# Use the os module to explore the current directory.
-# Print:
-#   1. The current working directory
-#   2. A list of all files and folders here
-#   3. For each item, whether it is a FILE or FOLDER
-
 print("\n=== File System Explorer ===")
 cwd = os.getcwd()
 print(f"  Current directory: {cwd}")
 print("  Contents:")
-
 try:
     for item in os.listdir("."):
         kind = "FILE  " if os.path.isfile(item) else "FOLDER"
         print(f"    [{kind}] {item}")
 except Exception as e:
     print(f"  Error reading directory: {e}")
-
-
-# ============================================================
-# EXERCISE 4: Log File Analyzer
-# ============================================================
-# Security analysts read log files to spot suspicious activity.
-# This exercise simulates reading a log and flagging
-# lines that contain the word "FAILED" or "ERROR".
 
 log_entries = [
     "2026-04-01 08:00 - User alice logged in successfully.",
@@ -122,20 +102,6 @@ for entry in log_entries:
         print(f"  ⚠️  {entry}")
         count += 1
 print(f"Total suspicious entries: {count}")
-
-
-# ============================================================
-# EXERCISE 5: Create a Secure Folder Structure
-# ============================================================
-# Use os.makedirs() to create a sample secure folder layout:
-#
-#   secure_vault/
-#   ├── public/
-#   ├── private/
-#   └── logs/
-#
-# Then write a README inside each folder explaining its purpose.
-
 print("\n=== Creating Secure Folder Structure ===")
 
 folders = {
